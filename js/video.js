@@ -23,24 +23,20 @@ document.querySelector("#faster").addEventListener("click", function() {
 	console.log(video.playbackRate)
 });
 
-document.querySelector("#vintage").addEventListener("click", function() {
-	console.add("OldSchool");
-	video.vintage()
-});
 
 document.querySelector("#pause").addEventListener("click", function() {
 	console.log("Pause Video");
 	video.pause()
 });
 
-document.querySelector("#orig").addEventListener("click", function() {
+document.querySelector("#vintage").addEventListener("click", function() {
 	console.log("Removing CSS");
-	video.classList("oldSchool")
+	video.classList.add("oldSchool")
 });
 
 document.querySelector("#orig").addEventListener("click", function() {
 	console.log("Removing CSS");
-	video.classList("oldSchool")
+	video.classList.remove("Original")
 });
 
 document.querySelector("#slider").addEventListener("click", function() {
