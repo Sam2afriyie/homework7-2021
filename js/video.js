@@ -68,13 +68,11 @@ else {
 
 document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip Ahead");
-
-if (video.currentTime= 180)
-	video.skip=180
-	video.skip == 15
-	console.log("Skip Ahead")
-
-else (video.currentTime=180)
-	 video.skip == "Play"
-
+	console.log(video.currentTime)
+	video.currentTime+= 15
+	if (video.currentTime>=video.duration){
+		video.currentTime=0
+		video.play()
+	}
+	console.log(video.currentTime)	
 });
