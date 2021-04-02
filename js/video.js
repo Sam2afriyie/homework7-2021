@@ -36,7 +36,7 @@ document.querySelector("#vintage").addEventListener("click", function() {
 
 document.querySelector("#orig").addEventListener("click", function() {
 	console.log("Removing CSS");
-	video.classList.remove("Original")
+	video.classList.remove("oldSchool")
 });
 
 document.querySelector("#slider").addEventListener("click", function() {
